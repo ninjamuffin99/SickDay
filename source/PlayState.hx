@@ -4,10 +4,14 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.addons.text.FlxTypeText;
+import flixel.input.touch.FlxTouch;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
 import flixel.math.FlxMath;
+
+import com.newgrounds.*;
+import com.newgrounds.components.*;
 
 class PlayState extends FlxState
 {
@@ -129,6 +133,9 @@ class PlayState extends FlxState
 		cooking = false;
 		cleaningup = false;
 		
+		var curr_date:Date = Date.now();
+		trace(curr_date);
+		
 		if (FlxG.sound.music == null) // don't restart the music if it's alredy playing
 		{
 			#if flash
@@ -229,6 +236,10 @@ class PlayState extends FlxState
 				{
 					#if flash
 					FlxG.sound.play("assets/sounds/switchon.mp3");
+					if (API.isNewgrounds)
+					{
+						API.unlockMedal("The NX was a cooler name");
+					}
 					#else
 					FlxG.sound.play("assets/sounds/switchon.ogg");
 					#end
@@ -302,6 +313,23 @@ class PlayState extends FlxState
 	
 	private function onDeskOverlap(player:FlxSprite, desk:FlxSprite):Void
 	{
+		/*#if mobile
+		if (FlxTouch(379, 29).justReleased)
+		{
+			if (!working)
+			{
+				#if flash
+				FlxG.sound.play("assets/sounds/pc.mp3", 0.3);
+				#else
+				FlxG.sound.play("assets/sounds/pc.ogg", 0.3);
+				#end
+				
+				player.visible = false;
+				desk.animation.play("work");
+				working = true;
+			}
+		}
+		//#end */
 		if (FlxG.keys.anyPressed([SPACE, UP, W]))
 		{
 			if (!working)

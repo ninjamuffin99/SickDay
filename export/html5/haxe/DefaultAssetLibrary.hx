@@ -93,8 +93,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -116,10 +114,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/lightswitch_V1.png", AssetType.IMAGE);
 		className.set ("assets/images/Oven_V1.png", __ASSET__assets_images_oven_v1_png);
 		type.set ("assets/images/Oven_V1.png", AssetType.IMAGE);
-		className.set ("assets/images/SCSpritesheetwalk.png", __ASSET__assets_images_scspritesheetwalk_png);
-		type.set ("assets/images/SCSpritesheetwalk.png", AssetType.IMAGE);
-		className.set ("assets/images/SCWal_V2.png", __ASSET__assets_images_scwal_v2_png);
-		type.set ("assets/images/SCWal_V2.png", AssetType.IMAGE);
 		className.set ("assets/images/SCWal_V3.png", __ASSET__assets_images_scwal_v3_png);
 		type.set ("assets/images/SCWal_V3.png", AssetType.IMAGE);
 		className.set ("assets/images/sink_V1.png", __ASSET__assets_images_sink_v1_png);
@@ -226,14 +220,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Oven_V1.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/SCSpritesheetwalk.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
-		id = "assets/images/SCWal_V2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -432,12 +418,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/images/Oven_V1.png", __ASSET__assets_images_oven_v1_png);
 		type.set ("assets/images/Oven_V1.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/SCSpritesheetwalk.png", __ASSET__assets_images_scspritesheetwalk_png);
-		type.set ("assets/images/SCSpritesheetwalk.png", AssetType.IMAGE);
-		
-		className.set ("assets/images/SCWal_V2.png", __ASSET__assets_images_scwal_v2_png);
-		type.set ("assets/images/SCWal_V2.png", AssetType.IMAGE);
 		
 		className.set ("assets/images/SCWal_V3.png", __ASSET__assets_images_scwal_v3_png);
 		type.set ("assets/images/SCWal_V3.png", AssetType.IMAGE);
@@ -1209,8 +1189,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_housebw_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_oven_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_scspritesheetwalk_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__assets_images_scwal_v2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_scwal_v3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_sink_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1297,8 +1275,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
 @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
 @:keep #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font { public function new () { super (); name = "Monsterrat"; } } 
 
@@ -1318,8 +1294,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/houseBW.png") #if display private #end class __ASSET__assets_images_housebw_png extends lime.graphics.Image {}
 @:image("assets/images/lightswitch_V1.png") #if display private #end class __ASSET__assets_images_lightswitch_v1_png extends lime.graphics.Image {}
 @:image("assets/images/Oven_V1.png") #if display private #end class __ASSET__assets_images_oven_v1_png extends lime.graphics.Image {}
-@:image("assets/images/SCSpritesheetwalk.png") #if display private #end class __ASSET__assets_images_scspritesheetwalk_png extends lime.graphics.Image {}
-@:image("assets/images/SCWal_V2.png") #if display private #end class __ASSET__assets_images_scwal_v2_png extends lime.graphics.Image {}
 @:image("assets/images/SCWal_V3.png") #if display private #end class __ASSET__assets_images_scwal_v3_png extends lime.graphics.Image {}
 @:image("assets/images/sink_V1.png") #if display private #end class __ASSET__assets_images_sink_v1_png extends lime.graphics.Image {}
 @:image("assets/images/TVCouch_V1.png") #if display private #end class __ASSET__assets_images_tvcouch_v1_png extends lime.graphics.Image {}
