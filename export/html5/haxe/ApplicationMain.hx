@@ -18,7 +18,7 @@ class ApplicationMain {
 		var app = new openfl.display.Application ();
 		app.create (config);
 		
-		var display = new Preloader ();
+		var display = new flixel.system.FlxPreloader ();
 		
 		preloader = new openfl.display.Preloader (display);
 		app.setPreloader (preloader);
@@ -51,6 +51,14 @@ class ApplicationMain {
 		
 		
 		urls.push ("assets/images/Oven_V1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/SCSpritesheetwalk.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/SCWal_V2.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -275,7 +283,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "46",
+			build: "35",
 			company: "NinjaMuffin",
 			file: "SCJam",
 			fps: 60,
